@@ -51,7 +51,7 @@
       <!-- --------- -->
       <!-- PROJECTS -->
       <!-- --------- -->
-      <section class="projects">
+      <section class="section">
         <div class="section-title__box">
           <h2 class="section-title">selected projects</h2>
         </div>
@@ -63,7 +63,7 @@
             <p class="project-title__desc">
               official website of architectural studio
             </p>
-            <p class="project-desc">
+            <p class="project-desc desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -85,7 +85,7 @@
           <div class="project__text-box">
             <h3 class="project-title">buko</h3>
             <p class="project-title__desc">gardening company website</p>
-            <p class="project-desc">
+            <p class="project-desc desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -107,7 +107,7 @@
           <div class="project__text-box">
             <h3 class="project-title">herowars</h3>
             <p class="project-title__desc">game for 2 players</p>
-            <p class="project-desc">
+            <p class="project-desc desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -129,7 +129,7 @@
           <div class="project__text-box">
             <h3 class="project-title">frontend mentor challenges</h3>
             <p class="project-title__desc">smaller projects and layouts</p>
-            <p class="project-desc">
+            <p class="project-desc desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -150,26 +150,33 @@
       <!-- --------- -->
       <!-- ABOUT ME -->
       <!-- --------- -->
-      <section class="about">
-        <h2>about me</h2>
+      <section class="section about">
+        <div class="section-title__box">
+          <h2>about me</h2>
+        </div>
         <div class="about-container">
           <div class="text-box">
-            <p>Hi, my name is</p>
-            <p>filip <spam>marcinkowski</spam></p>
-            <p>
+            <p class="about-desc">Hi, my name is</p>
+            <p class="about-desc__name">
+              filip <spam class="surname">marcinkowski</spam>
+            </p>
+            <p class="about-desc desc">
               I am an experienced architect with academic education and
               practical knowledge in construction, who has decided to pivot my
               career towards IT. I have completed courses in CSS, HTML, and
               JavaScript, and I am continuing to learn to further develop my
-              programming skills. I aim to leverage my analytical abilities,
-              project management skills, and experience in design to create
-              innovative solutions in web development and applications,
-              combining aesthetics with functionality. I am confident that my
-              experience and skills, coupled with diligence, provide a solid
-              foundation for growth in IT and front-end development, which I
-              envision as my future!
+              programming skills.
+            </p>
+            <p class="about-desc desc">
+              I aim to leverage my analytical abilities, project management
+              skills, and experience in design to create innovative solutions in
+              web development and applications, combining aesthetics with
+              functionality. I am confident that my experience and skills,
+              coupled with diligence, provide a solid foundation for growth in
+              IT and front-end development, which I envision as my future!
             </p>
           </div>
+          <!-- IMAGE -->
           <div class="image-box">
             <img
               src="./img/my.JPG"
@@ -178,9 +185,114 @@
             />
           </div>
         </div>
+        <!-- SKILLS -->
         <div class="about-container">
           <div class="about-skills__container">
-            <img src="" class="" alt="" />
+            <div class="skills">
+              <!-- archicad -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M 9 5 C 6.8026661 5 5 6.8026661 5 9 L 5 41 C 5 43.197334 6.8026661 45 9 45 L 41 45 C 43.197334 45 45 43.197334 45 41 L 45 9 C 45 6.8026661 43.197334 5 41 5 L 9 5 z M 23.511719 7 L 41 7 C 42.116666 7 43 7.8833339 43 9 L 43 41 C 43 42.116666 42.116666 43 41 43 L 37.058594 43 C 36.43597 37.017672 35.19826 29.005471 33.490234 22.253906 C 32.595373 18.716654 31.584231 15.548893 30.433594 13.1875 C 29.858275 12.006804 29.251201 11.023006 28.550781 10.28125 C 27.850362 9.5394939 26.991667 9 26 9 C 23.888 9 22.156827 10.642435 20.621094 12.398438 C 19.08536 14.154438 17.787601 16.171992 17.033203 17.402344 C 11.944201 25.703811 8.5431536 35.00681 7 39.675781 L 7 33.052734 C 10.340957 25.735163 16.252118 13.761517 23.511719 7 z M 26 11 C 26.258333 11 26.617736 11.148006 27.097656 11.65625 C 27.522804 12.106488 27.991272 12.842542 28.455078 13.740234 C 23.547649 16.927677 20.432161 24.074409 18.316406 30.564453 C 16.284374 36.797681 15.401018 41.871501 15.210938 43 L 9 43 C 8.678426 43 8.3806311 42.92005 8.1132812 42.789062 C 8.4975268 41.47529 12.189766 29.129572 18.738281 18.447266 C 19.465883 17.260617 20.725687 15.317092 22.126953 13.714844 C 23.52822 12.112595 25.112 11 26 11 z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">archicad</p>
+              </div>
+              <!-- photoshop -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="30px"
+                    height="30px"
+                  >
+                    <path
+                      d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 8 9.9921875 L 11.978516 9.9921875 C 13.947516 9.9921875 15.294922 11.339125 15.294922 13.328125 C 15.294922 15.283125 13.898344 16.623047 11.902344 16.623047 L 9.7636719 16.623047 L 9.7636719 19.857422 L 8 19.857422 L 8 9.9921875 z M 9.7636719 11.46875 L 9.7636719 15.160156 L 11.507812 15.160156 C 12.765813 15.160156 13.503906 14.504125 13.503906 13.328125 C 13.503906 12.119125 12.784672 11.46875 11.513672 11.46875 L 9.7636719 11.46875 z M 19.207031 12.226562 C 20.984031 12.226562 22.099656 13.013047 22.222656 14.373047 L 20.630859 14.373047 C 20.507859 13.847047 20.007844 13.511719 19.214844 13.511719 C 18.442844 13.511719 17.861328 13.881875 17.861328 14.421875 C 17.861328 14.845875 18.21675 15.105391 18.96875 15.275391 L 20.287109 15.576172 C 21.716109 15.897172 22.378906 16.513281 22.378906 17.613281 C 22.378906 19.050281 21.059359 20.007813 19.193359 20.007812 C 17.327359 20.007812 16.151484 19.199844 16.021484 17.839844 L 17.697266 17.839844 C 17.861266 18.393844 18.386375 18.722656 19.234375 18.722656 C 20.088375 18.722656 20.683594 18.346969 20.683594 17.792969 C 20.683594 17.368969 20.363344 17.101359 19.652344 16.943359 L 18.326172 16.636719 C 16.890172 16.308719 16.214844 15.645578 16.214844 14.517578 C 16.214844 13.163578 17.443031 12.226562 19.207031 12.226562 z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">photoshop</p>
+              </div>
+              <!-- css3 -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">css3</p>
+              </div>
+              <!-- html5 -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">html5</p>
+              </div>
+              <!-- js -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">js</p>
+              </div>
+              <!-- sass -->
+              <div class="skill">
+                <div class="icon-box">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                    width="50px"
+                    height="50px"
+                  >
+                    <path
+                      d="M 25 2 C 12.318 2 2 12.318 2 25 C 2 37.682 12.318 48 25 48 C 37.682 48 48 37.682 48 25 C 48 12.318 37.682 2 25 2 z M 30.648438 9.0019531 C 34.47123 8.9383567 37.622625 10.32975 38.28125 12.914062 C 39.22425 16.611063 36.01525 21.032094 31.90625 22.621094 C 28.23725 24.040094 25.204031 23.817203 23.957031 23.408203 C 22.540031 22.943203 21.709813 22.007469 21.507812 21.480469 C 21.428812 21.273469 21.290813 20.928594 21.507812 20.808594 C 21.640812 20.734594 21.692828 20.751531 22.048828 21.144531 C 22.387828 21.517531 23.748031 22.520469 26.332031 22.230469 C 33.115031 21.470469 37.199203 16.199281 35.908203 13.363281 C 35.004203 11.378281 29.777094 10.484281 23.246094 13.738281 C 15.273094 17.711281 14.841437 20.986469 14.773438 22.230469 C 14.586438 25.651469 18.995859 27.451094 21.380859 29.996094 C 21.436859 30.056094 21.490922 30.116734 21.544922 30.177734 C 22.266922 29.908734 23.266469 29.757469 24.855469 29.730469 C 28.713469 29.664469 30.892734 32.206469 30.802734 34.480469 C 30.732734 36.271469 29.089203 37.009547 28.783203 37.060547 C 28.561203 37.098547 28.439203 37.105641 28.408203 36.931641 C 28.386203 36.811641 28.466562 36.75575 28.726562 36.59375 C 28.986563 36.43275 29.765297 35.900688 29.904297 34.929688 C 30.043297 33.959688 29.316516 31.640031 25.603516 31.207031 C 24.287516 31.053031 23.251281 31.157578 22.363281 31.392578 C 23.007281 32.811578 23.131391 35.666953 21.650391 37.876953 C 20.115391 40.166953 17.258609 41.558203 14.474609 40.783203 C 13.576609 40.533203 12.217672 38.677844 13.388672 36.089844 C 14.498672 33.636844 19.239719 31.236969 19.886719 30.917969 L 19.886719 30.90625 C 17.689719 29.01525 12.34675 26.466406 11.59375 22.566406 C 11.37975 21.461406 11.897484 18.814391 15.146484 15.775391 C 17.879484 13.219391 21.681406 11.262625 25.191406 10.015625 C 27.034844 9.360625 28.910804 9.0308606 30.648438 9.0019531 z M 20.798828 32.072266 C 20.733828 32.108266 20.669469 32.143734 20.605469 32.177734 L 20.607422 32.185547 C 20.608422 32.184547 18.401188 33.226656 16.867188 34.847656 C 15.441187 36.354656 15.044844 38.246031 15.839844 38.707031 C 16.576844 39.134031 18.293437 38.628109 19.523438 37.287109 C 19.926437 36.847109 20.255953 36.370328 20.501953 35.861328 C 20.550953 35.759328 20.596672 35.656734 20.638672 35.552734 C 20.680672 35.448734 20.720859 35.343328 20.755859 35.236328 C 21.073859 34.274328 21.106828 33.211266 20.798828 32.072266 z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-name">sass</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -126,7 +126,7 @@ main {
 /* PROJECTS */
 /* //////////////////////////////// */
 
-.projects {
+.section {
 }
 
 .section-title__box {
@@ -165,6 +165,10 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.desc {
+  text-align: justify;
+}
+
 .project-desc {
   text-transform: lowercase;
 }
@@ -174,4 +178,79 @@ h2 {
 
 .project__image {
   height: 100%;
+}
+
+/* //////////////////////////////// */
+/* ABOUT ME */
+/* //////////////////////////////// */
+
+.about {
+  height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  /* height: 40vh; */
+  justify-content: end;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.about-container:not(:last-child) {
+  padding-bottom: 5rem;
+  border-bottom: var(--border-pr);
+}
+
+.text-box {
+  max-width: 100rem;
+  display: grid;
+  align-content: end;
+}
+
+.text-box p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.about-desc:not(:last-child) {
+}
+
+.about-desc__name {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.surname {
+  font-weight: 300;
+}
+
+.image-box {
+}
+
+.image {
+  height: 40vh;
+}
+
+/* SKILLS */
+.skill {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-box {
+  /* background-color: red; */
+}
+
+.icon {
+  height: 4rem;
+  width: auto;
+  display: block;
+
+  fill: var(--clr-primary);
+}
+
+.skill-name {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
