@@ -231,6 +231,30 @@ h2 {
 }
 
 /* SKILLS */
+
+.diagram {
+  justify-content: center;
+}
+
+.about-skills__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5rem;
+}
+.skills {
+  display: grid;
+
+  gap: 1rem;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 .skill {
   display: grid;
   justify-items: center;
@@ -240,6 +264,20 @@ h2 {
 
 .icon-box {
   /* background-color: red; */
+}
+
+.custom {
+  /* background-color: var(--clr-primary); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border: 0.3rem solid var(--clr-primary);
+  border-radius: 0.8rem;
+}
+.custom-desc {
+  font-weight: 900;
 }
 
 .icon {
