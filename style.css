@@ -180,57 +180,9 @@ h2 {
   height: 100%;
 }
 
-/* //////////////////////////////// */
-/* ABOUT ME */
-/* //////////////////////////////// */
-
-.about {
-  height: 100vh;
-}
-
-.about-container {
-  display: flex;
-  /* height: 40vh; */
-  justify-content: end;
-  gap: 4rem;
-  margin-bottom: 5rem;
-}
-
-.about-container:not(:last-child) {
-  padding-bottom: 5rem;
-  border-bottom: var(--border-pr);
-}
-
-.text-box {
-  max-width: 100rem;
-  display: grid;
-  align-content: end;
-}
-
-.text-box p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.about-desc:not(:last-child) {
-}
-
-.about-desc__name {
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.surname {
-  font-weight: 300;
-}
-
-.image-box {
-}
-
-.image {
-  height: 40vh;
-}
-
+/* ////////////////////////////// */
 /* SKILLS */
+/* ////////////////////////////// */
 
 .diagram {
   justify-content: center;
@@ -241,7 +193,7 @@ h2 {
   justify-content: center;
   align-items: center;
 
-  gap: 5rem;
+  gap: 15rem;
 }
 .skills {
   display: grid;
@@ -291,4 +243,115 @@ h2 {
 .skill-name {
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+/* SCHEME */
+
+.scheme {
+  display: flex;
+  align-items: center;
+}
+
+.circle-box {
+  position: relative;
+}
+
+.circle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: var(--clr-primary);
+}
+
+.circle-desc {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.arrow-box {
+  position: relative;
+  display: flex;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* padding-left: 1rem; */
+
+  height: 1rem;
+  width: 1rem;
+  border-top: 0.2rem solid var(--clr-primary);
+  border-right: 0.2rem solid var(--clr-primary);
+  transform: rotate(45deg) translate(-55%);
+  background-color: transparent;
+}
+
+.line-solid {
+  border-top: 0.1rem solid var(--clr-primary);
+  border-bottom: 0.1rem solid var(--clr-primary);
+  width: 20rem;
+  margin-right: 0.5rem;
+}
+.line-dash {
+  border-top: 0.1rem dashed var(--clr-primary);
+  border-bottom: 0.1rem dashed var(--clr-primary);
+  width: 5rem;
+}
+
+/* //////////////////////////////// */
+/* ABOUT ME */
+/* //////////////////////////////// */
+
+.about {
+  height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  /* flex-direction: row-reverse; */
+
+  justify-content: end;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.about-container:not(:last-child) {
+  padding-bottom: 5rem;
+  border-bottom: var(--border-pr);
+}
+
+.text-box {
+  max-width: 100rem;
+  display: grid;
+  align-content: end;
+}
+
+.text-box p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.about-desc:not(:last-child) {
+}
+
+.about-desc__name {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.surname {
+  font-weight: 300;
+}
+
+.image-box {
+}
+
+.image {
+  height: 60vh;
+  /* margin-right: 10rem; */
 }
