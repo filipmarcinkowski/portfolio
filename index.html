@@ -26,9 +26,9 @@
       <!-- NAV -->
       <nav class="nav">
         <ul class="nav-list">
-          <li><a class="nav-link nav-link__active" href="#">my projects</a></li>
+          <li><a class="nav-link nav-link__active" href="#">projects</a></li>
+          <li><a class="nav-link" href="#">skills</a></li>
           <li><a class="nav-link" href="#">about me</a></li>
-          <!-- <li><a class="nav-link" href="#">my skills</a></li> -->
           <li><a class="nav-link" href="#">contact</a></li>
         </ul>
       </nav>
@@ -150,14 +150,14 @@
       <!-- --------- -->
       <!-- SKILLS -->
       <!-- --------- -->
-      <section>
+      <section class="">
         <div class="section-title__box">
           <h2>skills</h2>
         </div>
-        <div class="about-container diagram">
-          <div class="about-skills__container">
+        <div class="diagram">
+          <div class="skills__container">
             <!-- 1 -->
-            <div class="skills col-2">
+            <div class="skills skills-p col-2">
               <!-- archicad -->
               <div class="skill">
                 <div class="icon-box">
@@ -225,6 +225,9 @@
                   </svg>
                 </div>
                 <p class="skill-name">sketchup</p>
+              </div>
+              <div class="skills-desc__box">
+                <p class="skills-desc">technologies i used as architect</p>
               </div>
             </div>
             <!-- 2 -->
@@ -366,6 +369,9 @@
                 </div>
                 <p class="skill-name">figma</p>
               </div>
+              <div class="skills-desc__box">
+                <p class="skills-desc">technologies i use</p>
+              </div>
             </div>
             <!-- 4 -->
             <div class="skills col-2">
@@ -427,6 +433,9 @@
                 </div>
                 <p class="skill-name">more</p>
               </div>
+              <div class="skills-desc__box">
+                <p class="skills-desc">technologies i'm working on</p>
+              </div>
             </div>
           </div>
         </div>
@@ -470,14 +479,44 @@
           </div>
         </div>
       </section>
+      <!-- ----------------- -->
+      <!-- CONTACT -->
+      <!-- ----------------- -->
       <section class="contact">
-        <p class="contact-text email">filipmarcinkowski@wp.pl</p>
-        <p class="contact-text phone">+48601610623</p>
+        <div class="section-title__box">
+          <h2>contact</h2>
+        </div>
+        <div class="contact-box">
+          <p class="contact-text email">filipmarcinkowski@wp.pl</p>
+          <p class="contact-text phone">+48601610623</p>
+        </div>
       </section>
     </main>
+    <!-- ----------------- -->
+    <!-- FOOTER -->
+    <!-- ----------------- -->
     <footer class="footer">
-      <p class="contact-text email">filipmarcinkowski@wp.pl</p>
-      <p class="contact-text phone">+48601610623</p>
+      <div class="footer-items">
+        <p class="footer-item__rights">
+          © 2024
+          <span class="about-desc__name">
+            filip<span class="surname">marcinkowski</span>
+          </span>
+        </p>
+        <a href="#" class="footer-item__link">
+          <svg
+            class="icon"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+          >
+            <title></title>
+            <path
+              d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </footer>
     <script src="./script.js"></script>
   </body>
