@@ -114,7 +114,7 @@ body {
 /* MAIN */
 /* //////////////////////////////// */
 main {
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 /* //////////////////////////////// */
@@ -375,14 +375,61 @@ h2 {
 /* CONTACT */
 /* /////////////////////////// */
 
-.contact {
-  height: 50vh;
+.section-contact {
+  margin-bottom: 0;
 }
 
 .contact-box {
-  /* margin: 0 auto; */
+  margin: 0 4rem;
+  height: 30vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  /* border: var(--border-pr); */
+}
+
+.contact-text {
+  font-size: 8rem;
+  font-weight: 900;
+  /* line-height: 8rem; */
+  /* background-color: red; */
+}
+
+/* /////////////////////////// */
+/* FOOTER */
+/* /////////////////////////// */
+
+footer {
+  margin: 0 2rem;
+}
+
+.footer {
+  height: 20vh;
+  border-top: var(--border-pr);
+}
+
+.footer-container {
+  /* margin: 0 4rem; */
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* border: 0.1rem solid blue; */
+}
+
+.footer-rights {
+  text-transform: uppercase;
+  /* background-color: red; */
+}
+
+.footer-rights__name {
+  font-weight: 900;
+  margin-left: 3rem;
+}
+
+.icon-arrow {
+  height: 3rem;
+  margin-right: 2rem;
 }
