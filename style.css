@@ -44,37 +44,57 @@ body {
 
 .nav {
   height: 25vh;
-
+  /* background-color: blue; */
   display: flex;
   justify-content: flex-end;
+  /* align-items: center; */
 
   border: var(--border-r);
 }
 .nav-list {
+  /* background-color: blue; */
   height: fit-content;
   margin-top: 8rem;
   margin-right: 4rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-items: center; */
+  /* gap: 0.4rem; */
 
   list-style: none;
   text-align: end;
+  /* text-justify: center; */
 
   border-right: 0.3rem solid var(--clr-primary);
 }
 
 .nav-link:link,
 .nav-link:visited {
+  display: inline-block;
+  /* height: 5rem; */
   text-decoration: none;
+
+  /* line-height: 4rem; */
   margin-right: 0.1rem;
   padding-right: 1.2rem;
   color: var(--clr-primary);
   text-transform: uppercase;
   font-weight: 900;
   border-right: 0.3rem solid transparent;
+  /* padding-left: 3rem; */
+  /* background-color: red; */
+
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover,
 .nav-link:active {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  /* transform: scale(1.01); */
+  /* font-size: 2.5rem; */
   border-right: 0.3rem solid var(--clr-primary);
+  border-left: 0.3rem solid var(--clr-primary);
 }
 
 /* TITLE */
