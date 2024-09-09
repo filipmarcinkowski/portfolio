@@ -17,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,16 +60,20 @@ body {
 
   border-right: 0.3rem solid var(--clr-primary);
 }
-.nav-link {
+
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
   margin-right: 0.1rem;
-  padding-right: 1.5rem;
+  padding-right: 1.2rem;
   color: var(--clr-primary);
   text-transform: uppercase;
   font-weight: 900;
+  border-right: 0.3rem solid transparent;
 }
 
-.nav-link__active {
+.nav-link:hover,
+.nav-link:active {
   border-right: 0.3rem solid var(--clr-primary);
 }
 
@@ -367,7 +372,7 @@ h2 {
 }
 
 .image {
-  height: 60vh;
+  height: 70vh;
   /* margin-right: 10rem; */
 }
 
@@ -436,6 +441,6 @@ footer {
 }
 
 .icon-arrow {
-  height: 3rem;
+  height: 2rem;
   margin-right: 12rem;
 }
