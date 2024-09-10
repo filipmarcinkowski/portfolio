@@ -90,10 +90,8 @@ body {
 .nav-link:hover,
 .nav-link:active {
   padding-right: 4rem;
-  padding-left: 4rem;
-  /* transform: scale(1.01); */
-  /* font-size: 2.5rem; */
   border-right: 0.3rem solid var(--clr-primary);
+  padding-left: 4rem;
   border-left: 0.3rem solid var(--clr-primary);
 }
 
@@ -133,6 +131,17 @@ body {
 
 .title-name__title-part__bottom {
   justify-self: center;
+}
+
+/* for JS */
+
+.title-elem {
+  /* opacity: 0; */
+  transition: all 0.2s;
+}
+
+.title-name__title-part__top {
+  overflow: hidden;
 }
 
 /* //////////////////////////////// */
