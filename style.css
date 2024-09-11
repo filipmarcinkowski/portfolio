@@ -215,14 +215,21 @@ h2 {
 /* SKILLS */
 /* ////////////////////////////// */
 
+.section-skills {
+  min-height: 100vh;
+  height: 100vh;
+  /* background-color: green; */
+}
+
 .diagram {
-  height: 50rem;
+  height: 100%;
   display: grid;
   justify-content: center;
   align-content: center;
 }
 
 .skills__container {
+  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +383,7 @@ h2 {
 }
 
 .text-box {
-  max-width: 100rem;
+  max-width: 90rem;
   display: grid;
   align-content: end;
 }
@@ -409,23 +416,29 @@ h2 {
 /* CONTACT */
 /* /////////////////////////// */
 
+.contact,
 .section-contact {
-  /* margin-bottom: 10rem; */
+  margin-bottom: 8rem;
 }
 
 .contact-box {
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0 4rem;
-  height: 30vh;
+  /* height: 30vh; */
 
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: start;
 }
 
 .item-box {
+  margin-left: 8rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  gap: 4rem;
 }
 
 .contact-text__label {
@@ -435,6 +448,10 @@ h2 {
 .contact-text {
   font-weight: 700;
 }
+
+/* .btn {
+  text-transform: uppercase;
+} */
 
 /* /////////////////////////// */
 /* FOOTER */
