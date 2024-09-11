@@ -175,14 +175,14 @@ h2 {
 .project-container {
   display: flex;
   height: 40vh;
-  justify-content: end;
+  justify-content: center;
   gap: 4rem;
   margin-bottom: 5rem;
 }
 
 .project__text-box {
   /* border: var(--border-pr); */
-  max-width: 100rem;
+  max-width: 90rem;
   display: grid;
   align-content: end;
 

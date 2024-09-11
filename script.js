@@ -11,16 +11,9 @@ const changeMargin = function () {
   textBox.forEach(function (box) {
     box.style.marginLeft = titleWidth + 'px';
   });
-
-  // my photo margin-right
-  // const imageWidth = projectImage.getBoundingClientRect().width;
-  // const myImageWidth = myImage.getBoundingClientRect().width;
-
-  // const myImageMarginRight = imageWidth - myImageWidth;
-  // myImage.style.marginRight = myImageMarginRight + 'px';
 };
 
-changeMargin();
+// changeMargin();
 
 // let index = 0;
 
