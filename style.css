@@ -152,7 +152,7 @@ main {
 }
 
 /* //////////////////////////////// */
-/* PROJECTS */
+/* GENERAL*/
 /* //////////////////////////////// */
 
 .section {
@@ -164,6 +164,10 @@ main {
   border-bottom: var(--border-pr);
   margin-bottom: 1rem;
 }
+
+/* //////////////////////////////// */
+/* PROJECTS */
+/* //////////////////////////////// */
 
 h2 {
   font-size: 2.2rem;
@@ -177,7 +181,7 @@ h2 {
   height: 40vh;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .project__text-box {
@@ -205,10 +209,44 @@ h2 {
 }
 
 .project__image-box {
+  position: relative;
 }
 
 .project__image {
   height: 100%;
+  /* transition: filter 0.2s; */
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 12%, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project__image-box:hover .overlay {
+  opacity: 1;
+}
+.project__image-box:hover .project__image {
+  filter: blur(0.3rem);
 }
 
 /* ////////////////////////////// */
@@ -218,29 +256,25 @@ h2 {
 .section-skills {
   min-height: 100vh;
   height: 100vh;
+
   /* background-color: green; */
 }
 
 .diagram {
   height: 100%;
   display: grid;
-  justify-content: center;
-  align-content: center;
 }
 
 .skills__container {
-  /* height: 100%; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-
-  gap: 15rem;
 }
 .skills {
   position: relative;
   display: grid;
 
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 .skills-desc__box {
@@ -267,7 +301,7 @@ h2 {
   display: grid;
   justify-items: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .icon-box {
@@ -289,7 +323,7 @@ h2 {
 }
 
 .icon {
-  height: 4rem;
+  height: 6rem;
   width: auto;
   display: block;
 
@@ -298,7 +332,7 @@ h2 {
 
 .skill-name {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* SCHEME */
