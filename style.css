@@ -291,7 +291,7 @@ h2 {
 
 .skills-desc__box {
   position: absolute;
-  top: 120%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20rem;
@@ -303,18 +303,18 @@ h2 {
   text-align: center;
 }
 
-/* .col-2 {
+.col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 .col-4 {
   grid-template-columns: repeat(4, 1fr);
-} */
-.col-2 {
+}
+/* .col-2 {
   grid-template-columns: 1fr;
 }
 .col-4 {
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 .skill {
   display: grid;
   justify-items: center;
@@ -505,6 +505,19 @@ h2 {
 
 .contact-text {
   font-weight: 700;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  text-decoration: none;
+  color: var(--clr-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  /* font-weight: 700; */
+}
+.contact-link:hover,
+.contact-link:active {
+  letter-spacing: 0.5rem;
 }
 
 /* .btn {
