@@ -165,6 +165,10 @@ main {
   margin-bottom: 1rem;
 }
 
+.s-padding__top {
+  padding-top: 2rem;
+}
+
 /* //////////////////////////////// */
 /* PROJECTS */
 /* //////////////////////////////// */
