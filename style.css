@@ -309,12 +309,7 @@ h2 {
 .col-4 {
   grid-template-columns: repeat(4, 1fr);
 }
-/* .col-2 {
-  grid-template-columns: 1fr;
-}
-.col-4 {
-  grid-template-columns: repeat(2, 1fr);
-} */
+
 .skill {
   display: grid;
   justify-items: center;
@@ -331,8 +326,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  aspect-ratio: 1/1;
   height: 8rem;
-  width: 8rem;
+  /* width: 8rem; */
   border: 0.3rem solid var(--clr-primary);
   border-radius: 0.8rem;
 }
@@ -476,12 +472,7 @@ h2 {
 .contact-box {
   font-size: 5rem;
   margin: 0 4rem;
-  /* height: 30vh; */
-
-  /* display: flex; */
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-
   justify-content: start;
 }
 
@@ -491,15 +482,9 @@ h2 {
   align-items: center;
   justify-content: start;
   gap: 4rem;
-  /* display: grid;
-  grid-template-columns: repeat(20rem 1fr);
-  align-items: center;
-  justify-content: start;
-  gap: 4rem; */
 }
 
 .contact-text__label {
-  /* letter-spacing: 1rem; */
   width: 15rem;
 }
 
@@ -513,16 +498,11 @@ h2 {
   color: var(--clr-primary);
   cursor: pointer;
   transition: all 0.2s;
-  /* font-weight: 700; */
 }
 .contact-link:hover,
 .contact-link:active {
   letter-spacing: 0.5rem;
 }
-
-/* .btn {
-  text-transform: uppercase;
-} */
 
 /* /////////////////////////// */
 /* FOOTER */

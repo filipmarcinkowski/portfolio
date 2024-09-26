@@ -1,0 +1,170 @@
+@media (max-width: 92.5em) {
+  /* HEADER */
+  .title-container {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+
+    display: grid;
+    align-content: end;
+  }
+
+  /*SKILL SECTION  */
+  .section-skills {
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .diagram {
+    height: 100%;
+    margin: 20rem 0;
+  }
+  .skills-desc__box {
+    top: 120%;
+  }
+  .col-2 {
+    grid-template-columns: 1fr;
+  }
+  .col-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  .title-name {
+    font-size: 12rem;
+    line-height: 10rem;
+  }
+
+  /* SKILLS */
+  .diagram {
+    margin: 0;
+    padding: 8rem 0;
+  }
+  .skills-desc__box {
+    top: 110%;
+  }
+
+  .icon {
+    height: 6rem;
+  }
+
+  .custom {
+    height: 6rem;
+  }
+  .custom-desc {
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+  /* FOOTER */
+  .icon-arrow {
+    height: 1.8rem;
+    margin-right: 6rem;
+  }
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 42%;
+  }
+}
+@media (max-width: 43.5em) {
+  html {
+    font-size: 37.5%;
+  }
+  .title-container {
+    margin: 0;
+    margin-left: 20rem;
+  }
+  .title-name__surname {
+    font-weight: 300;
+    /* display: none; */
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  /* PROJECT */
+  .project__text-box {
+    max-width: 100%;
+    /* width: 100%; */
+  }
+  .project-container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  .project__image-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .project__image {
+    height: auto;
+    width: 100%;
+  }
+  /* SKILLS */
+  .skills__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15rem;
+  }
+
+  .col-2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skills-desc__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -50%);
+    width: 20rem;
+  }
+
+  .skills-desc {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* ABOUT */
+  .about-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .text-box {
+    max-width: 100%;
+  }
+  .image-box {
+    width: 100%;
+  }
+
+  .image {
+    height: auto;
+    width: 100%;
+  }
+  /* CONTACT */
+  .contact-box {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 34.5em) {
+  /* CONTACT */
+  .contact-box {
+    font-size: 3rem;
+    /* margin: 0 auto; */
+  }
+  .contact-text__label {
+    width: 6rem;
+  }
+}
