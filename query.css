@@ -10,12 +10,14 @@
 
   /*SKILL SECTION  */
   .section-skills {
-    min-height: 100vh;
-    height: fit-content;
+    /* min-height: 100vh; */
+    /* height: fit-content; */
+    /* height: 100%; */
   }
   .diagram {
-    height: 100%;
-    margin: 20rem 0;
+    /* height: 100%; */
+    /* margin-bottom: 25rem; */
+    /* margin: 20rem 0; */
   }
   .skills-desc__box {
     top: 120%;
@@ -27,11 +29,32 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+/* 1200 */
 @media (max-width: 75em) {
   .title-name {
     font-size: 12rem;
     line-height: 10rem;
+  }
+  /* PROJECT */
+  .project__text-box {
+    max-width: 100%;
+  }
+  .project-container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  .project__image-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .project__image {
+    height: auto;
+    width: 100%;
   }
 
   /* SKILLS */
@@ -53,54 +76,6 @@
   .custom-desc {
     font-weight: 900;
   }
-}
-
-@media (max-width: 64em) {
-  html {
-    font-size: 50%;
-  }
-
-  /* FOOTER */
-  .icon-arrow {
-    height: 1.8rem;
-    margin-right: 6rem;
-  }
-}
-@media (max-width: 50em) {
-  html {
-    font-size: 42%;
-  }
-  /* PROJECT */
-  .project__text-box {
-    max-width: 100%;
-    /* width: 100%; */
-  }
-  .project-container {
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    gap: 1rem;
-    margin-bottom: 5rem;
-  }
-  .project__image-box {
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-
-  .project__image {
-    height: auto;
-    width: 100%;
-  }
-  /* SKILLS */
-  .section-skills {
-    min-height: auto;
-    height: 100%;
-  }
-  .diagram {
-    height: 100%;
-    padding: 5rem 0 15rem;
-  }
   /* ABOUT */
   .about-container {
     flex-direction: column;
@@ -118,9 +93,39 @@
     width: 100%;
   }
 }
+/* 1024 */
+@media (max-width: 64em) {
+  html {
+    font-size: 55%;
+  }
+  .contact-box {
+    font-size: 4rem;
+  }
+
+  /* FOOTER */
+  .icon-arrow {
+    height: 1.8rem;
+    margin-right: 6rem;
+  }
+}
+@media (max-width: 50em) {
+  html {
+    font-size: 45%;
+  }
+
+  /* SKILLS */
+  .section-skills {
+    min-height: auto;
+    height: 100%;
+  }
+  .diagram {
+    height: 100%;
+    padding: 5rem 0 15rem;
+  }
+}
 @media (max-width: 43.5em) {
   html {
-    font-size: 37.5%;
+    font-size: 42%;
   }
   .title-container {
     margin: 0;
@@ -171,7 +176,7 @@
 
   /* CONTACT */
   .contact-box {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
