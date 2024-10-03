@@ -92,6 +92,10 @@
     height: auto;
     width: 100%;
   }
+  /* FOOTER */
+  .icon-arrow {
+    height: 2rem;
+  }
 }
 /* 1024 */
 @media (max-width: 64em) {
@@ -183,6 +187,11 @@
 @media (max-width: 34.5em) {
   .title-container {
     margin: 0 auto;
+    padding-bottom: 10rem;
+  }
+
+  .title-name {
+    line-height: 10rem;
   }
   /* CONTACT */
   .contact-box {
@@ -191,5 +200,24 @@
   }
   .contact-text__label {
     width: 6rem;
+  }
+  /* CONTACT */
+  .contact-box {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 30em) {
+  .contact-box {
+    margin: 0;
+  }
+  .contact-text__label {
+    font-size: 2.5rem;
+  }
+  /* CONTACT */
+  .contact-text {
+    font-size: 2.5rem;
+  }
+  .item-box {
+    gap: 2rem;
   }
 }
