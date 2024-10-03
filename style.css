@@ -117,16 +117,21 @@ body {
   border: var(--border-b);
   font-size: 3rem;
 }
+.title-name__title-part__top {
+  text-indent: -0.1rem;
+}
 .title-name {
   text-transform: uppercase;
   font-size: 15rem;
   line-height: 12rem;
+  text-indent: -0.7rem;
 
   border: var(--border-g);
 }
 .title-name__surname {
   font-weight: 300;
   display: block;
+  text-indent: -0.9rem;
 }
 
 .title-name__title-part__bottom {

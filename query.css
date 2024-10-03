@@ -116,6 +116,15 @@
   html {
     font-size: 45%;
   }
+  .title-name__title-part__top {
+    text-indent: -0.1rem;
+  }
+  .title-name {
+    text-indent: -0.7rem;
+  }
+  .title-name__surname {
+    text-indent: -0.3rem;
+  }
 
   /* SKILLS */
   .section-skills {
@@ -190,8 +199,10 @@
     padding-bottom: 10rem;
   }
 
-  .title-name {
-    line-height: 10rem;
+  .title-name:last-child {
+    line-height: 8rem;
+    /* text-indent: -4rem; */
+    /* letter-spacing: -0.5rem; */
   }
   /* CONTACT */
   .contact-box {
