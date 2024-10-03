@@ -112,6 +112,7 @@
     margin-right: 6rem;
   }
 }
+/* 800px */
 @media (max-width: 50em) {
   html {
     font-size: 45%;
@@ -124,6 +125,7 @@
     /* line-height: 8rem; */
   }
   .title-name__surname {
+    display: none;
     text-indent: -0.3rem;
   }
 
@@ -137,6 +139,7 @@
     padding: 5rem 0 15rem;
   }
 }
+/* 700px */
 @media (max-width: 43.5em) {
   html {
     font-size: 42%;
