@@ -121,6 +121,7 @@
   }
   .title-name {
     text-indent: -0.7rem;
+    line-height: 8rem;
   }
   .title-name__surname {
     text-indent: -0.3rem;
