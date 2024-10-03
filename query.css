@@ -121,7 +121,7 @@
   }
   .title-name {
     text-indent: -0.7rem;
-    line-height: 8rem;
+    /* line-height: 8rem; */
   }
   .title-name__surname {
     text-indent: -0.3rem;
@@ -200,11 +200,6 @@
     padding-bottom: 10rem;
   }
 
-  .title-name:last-child {
-    line-height: 8rem;
-    /* text-indent: -4rem; */
-    /* letter-spacing: -0.5rem; */
-  }
   /* CONTACT */
   .contact-box {
     font-size: 3rem;
