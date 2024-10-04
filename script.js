@@ -13,6 +13,8 @@ const changeMargin = function () {
   });
 };
 
+const titleElem = document.querySelectorAll('.title-elem');
+
 // changeMargin();
 
 // let index = 0;
@@ -34,8 +36,6 @@ const changeMargin = function () {
 
 // titleElem.forEach(showText);
 
-const titleElem = document.querySelectorAll('.title-elem');
-
 // document.addEventListener('DOMContentLoaded', function () {
 //   titleElem.forEach(function (e) {
 //     // e.style.opacity = 0;
@@ -54,3 +54,6 @@ const titleElem = document.querySelectorAll('.title-elem');
 //     setTimeout(showText, 1000);
 //   });
 // });
+
+const observer = new IntersectionObserver();
+observer.observe();
