@@ -56,4 +56,4 @@ const titleElem = document.querySelectorAll('.title-elem');
 // });
 
 const observer = new IntersectionObserver();
-observer.observe();
+// observer.observe();
