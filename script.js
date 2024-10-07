@@ -1,10 +1,10 @@
 'use strict';
 
+/*
 const title = document.querySelector('.section-title');
 const textBox = document.querySelectorAll('.project__text-box');
 const projectImage = document.querySelector('.project__image');
 const myImage = document.querySelector('.image');
-
 const changeMargin = function () {
   // projects describtion margin-left
   const titleWidth = title.getBoundingClientRect().width;
@@ -15,45 +15,24 @@ const changeMargin = function () {
 
 const titleElem = document.querySelectorAll('.title-elem');
 
-// changeMargin();
+*/
 
-// let index = 0;
+const allProjects = document.querySelectorAll('.project-container');
 
-// const showText = function (e) {
-//   text = e.textContent;
+const showProjects = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
 
-//   e.textContent += text[index];
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('animated-project');
+  observer.unobserve(entry.target);
+};
 
-//   e.style.opacity = 1;
-//   console.log(text);
+const projectsObserver = new IntersectionObserver(showProjects, {
+  root: null,
+  threshold: 0.3,
+});
 
-//   // if (index < text.length) {
-//   //   e.textContent += text[index];
-//   //   index++;
-//   //   setTimeout(showText, 100);
-//   // }
-// };
-
-// titleElem.forEach(showText);
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   titleElem.forEach(function (e) {
-//     // e.style.opacity = 0;
-//     const myText = e.textContent;
-//     console.log(myText);
-//     e.textContent = '';
-//     let index = 0;
-
-//     const showText = function () {
-//       if (index < myText.length) {
-//         e.textContent += myText[index];
-//         index++;
-//         setTimeout(showText, 50);
-//       }
-//     };
-//     setTimeout(showText, 1000);
-//   });
-// });
-
-const observer = new IntersectionObserver();
-// observer.observe();
+allProjects.forEach(function (project) {
+  projectsObserver.observe(project);
+});

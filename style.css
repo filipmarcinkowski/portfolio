@@ -178,6 +178,20 @@ main {
 /* PROJECTS */
 /* //////////////////////////////// */
 
+/* //////////////////////////////// */
+.projects {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-project {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: all 1s;
+}
+
+/* //////////////////////////////// */
+
 h2 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -197,6 +211,7 @@ h2 {
   justify-content: center;
   gap: 4rem;
   margin-bottom: 1rem;
+  transition: all 1s;
 }
 
 .project__text-box {
