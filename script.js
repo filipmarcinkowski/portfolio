@@ -1,31 +1,15 @@
 'use strict';
 
-/*
-const title = document.querySelector('.section-title');
-const textBox = document.querySelectorAll('.project__text-box');
-const projectImage = document.querySelector('.project__image');
-const myImage = document.querySelector('.image');
-const changeMargin = function () {
-  // projects describtion margin-left
-  const titleWidth = title.getBoundingClientRect().width;
-  textBox.forEach(function (box) {
-    box.style.marginLeft = titleWidth + 'px';
-  });
-};
-
-const titleElem = document.querySelectorAll('.title-elem');
-
-*/
-
-const allProjects = document.querySelectorAll('.project-container');
+const allContainers = document.querySelectorAll('.container');
 
 const showProjects = function (entries, observer) {
-  const [entry] = entries;
-  console.log(entry);
-
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove('animated-project');
-  observer.unobserve(entry.target);
+  // const [entry] = entries;
+  // console.log(entry);
+  entries.forEach(function (entry) {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove('animated-elem');
+    observer.unobserve(entry.target);
+  });
 };
 
 const projectsObserver = new IntersectionObserver(showProjects, {
@@ -33,6 +17,6 @@ const projectsObserver = new IntersectionObserver(showProjects, {
   threshold: 0.3,
 });
 
-allProjects.forEach(function (project) {
+allContainers.forEach(function (project) {
   projectsObserver.observe(project);
 });
