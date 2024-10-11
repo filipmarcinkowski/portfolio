@@ -466,7 +466,7 @@ h2 {
   justify-content: center;
   gap: 4rem;
   margin-bottom: 5rem;
-  transition: all 0.4s;
+  transition: all 1s;
 }
 
 .about-container:not(:last-child) {
