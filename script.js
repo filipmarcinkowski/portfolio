@@ -1,5 +1,6 @@
 'use strict';
 
+const footerBox = document.querySelector('.footer-container');
 const allContainers = document.querySelectorAll('.container');
 
 const showProjects = function (entries, observer) {
@@ -20,3 +21,16 @@ const projectsObserver = new IntersectionObserver(showProjects, {
 allContainers.forEach(function (project) {
   projectsObserver.observe(project);
 });
+
+// set data on footer
+
+const currenYear = new Date().getFullYear();
+
+const footerDateHTML = `<p class="footer-rights">
+          © ${currenYear}
+          <span class="footer-rights__name">
+            filip</span>marcinkowski
+          </span>
+        </p>`;
+
+footerBox.insertAdjacentHTML('afterbegin', footerDateHTML);
